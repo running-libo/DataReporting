@@ -30,6 +30,7 @@ public class ActivityLifecycleTracker implements Application.ActivityLifecycleCa
 
     @Override
     public void onActivityStarted(@NonNull Activity activity) {
+        //activity进入打点
 
     }
 
@@ -45,6 +46,7 @@ public class ActivityLifecycleTracker implements Application.ActivityLifecycleCa
 
     @Override
     public void onActivityStopped(@NonNull Activity activity) {
+        //activity页面退出打点
 
     }
 
