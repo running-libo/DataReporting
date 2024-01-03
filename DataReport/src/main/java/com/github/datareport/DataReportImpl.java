@@ -18,11 +18,12 @@ public class DataReportImpl {
     private final List<List<Event>> uploadLists = Collections.synchronizedList(new ArrayList());
     /** 打点上传失败缓存 */
     private final List<Event> failUploadLists = Collections.synchronizedList(new ArrayList());
+    private final String cacheFileName = "cacheFile";
 
-    public static void init(Application context) {
+    public void init(Application context) {
 
         //1.在主进程下， 将各个子进程缓存文件合并入主进程缓存文件
-
+        FileUtils.mergeEventToPersist();
         //
 
         //常驻进程任务初始化

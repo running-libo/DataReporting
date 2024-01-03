@@ -9,6 +9,6 @@ import android.app.Application;
 public class DataReport {
 
     public static void init(Application context) {
-        DataReportImpl.init(context);
+        new DataReportImpl().init(context);
     }
 }

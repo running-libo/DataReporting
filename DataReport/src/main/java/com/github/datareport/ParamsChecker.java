@@ -37,6 +37,16 @@ public class ParamsChecker {
         return true;
     }
 
+    public static boolean isStringType(Object value) {
+        return value instanceof String;
+    }
 
+    public static boolean isBooleanType(Object value) {
+        return value instanceof Boolean;
+    }
+
+    public static boolean isIntegerType(Object value) {
+        return value instanceof Integer || value instanceof Long || value instanceof Short || value instanceof Byte;
+    }
 }
 
